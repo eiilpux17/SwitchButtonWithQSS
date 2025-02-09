@@ -2,7 +2,8 @@
 
 使用QStyle接口实现支持QSS的SwitchButton
 
-<img src="https://img.picgo.net/2024/09/24/qss_switch_buttond68633f422ac14f4.gif">
+![switchbutton](https://github.com/user-attachments/assets/dae64037-27d3-49a7-8f64-aa610b96a783)
+
 
 使用QStyleOptionButton绘制背景，使用QStyleOptionSlider绘制开关滑块，因此可以使用handle子控件、checked状态来定制样式。
 
