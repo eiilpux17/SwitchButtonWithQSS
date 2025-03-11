@@ -38,7 +38,9 @@ void SwitchButton::paintEvent(QPaintEvent *)
 
     painter.setOpacity(1.0); //滑块不透明
     QStyleOptionSlider sliderOpt;
-    sliderOpt.init(this);
+    // sliderOpt.init(this);
+    // Qt5和Qt6中init()成员变为initFrom()了，应改为如下语句 
+    sliderOpt.initFrom(this);
     sliderOpt.subControls = QStyle::SC_SliderHandle;
     sliderOpt.activeSubControls = QStyle::SC_ScrollBarSlider;   // 这里需要使用ScrollBar
     sliderOpt.minimum = 0;
